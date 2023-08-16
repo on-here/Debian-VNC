@@ -1,5 +1,6 @@
 #!/bin/bash
 rm /home/vncuser/.vnc/xstartup
-cd /home/vncuser/.vnc/
-wget xstartup https://www.dropbox.com/s/mvcd14d5xu6dfja/xstartup
+cp /home/vncuser/Debian-VNC/xstartup /home/vncuser/.vnc/
+chmod 777 /home/vncuser/.vnc/xstartup
+#kill vncserver
 vncserver -kill :1
